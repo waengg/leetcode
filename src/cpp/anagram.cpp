@@ -12,8 +12,6 @@ public:
         int32_t letterCount[26] = { 0 };
         for (int i = 0; i < s.length(); i++) {
             letterCount[s[i] - 'a']++;
-        }
-        for (int i = 0; i < t.length(); i++) {
             letterCount[t[i] - 'a']--;
         }
         for (int i = 0; i < 26; i++) {
